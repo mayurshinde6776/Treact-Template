@@ -109,6 +109,8 @@ import AboutUs from "pages/AboutUs";
 import BlogIndex from "pages/BlogIndex";
 import Pricing from "pages/Pricing";
 import ContactUs from "pages/ContactUs";
+import Login from "pages/Login";
+import Signup from "pages/Signup";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -128,6 +130,8 @@ export default function App() {
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
     </>
