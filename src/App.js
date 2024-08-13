@@ -63,7 +63,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 // import Testimonial from "components/testimonials/SimplePrimaryBackground.js";
 
-// import FAQ from "components/faqs/SimpleWithSideImage.js";
+ //import FAQ from "components/faqs/SimpleWithSideImage.js";
 // import FAQ from "components/faqs/SingleCol.js";
 // import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 
@@ -86,31 +86,24 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-// import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
+ import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
-// import LoginPage from "pages/Login.js";
-// import SignupPage from "pages/Signup.js";
-// import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
-// import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import LoginPage from "pages/Login.js";
+import SignupPage from "pages/Signup.js";
+import PricingPage from "pages/Pricing.js";
+import AboutUsPage from "pages/AboutUs.js";
+import ContactUsPage from "pages/ContactUs.js";
+import BlogIndexPage from "pages/BlogIndex.js";
+import TermsOfServicePage from "pages/TermsOfService.js";
+import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutUs from "pages/AboutUs";
-import BlogIndex from "pages/BlogIndex";
-import Pricing from "pages/Pricing";
-import ContactUs from "pages/ContactUs";
-import Login from "pages/Login";
-import Signup from "pages/Signup";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -125,13 +118,15 @@ export default function App() {
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/" element={<MainLandingPage />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<RestaurantLandingPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/blog" element={<BlogIndexPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/termservice" element={<TermsOfServicePage />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
         </Routes>
       </Router>
     </>

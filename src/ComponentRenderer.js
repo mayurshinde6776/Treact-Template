@@ -1,23 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js"
-
-import EventLandingPage from "demos/EventLandingPage.js";
-import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
-import AgencyLandingPage from "demos/AgencyLandingPage.js";
-import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
-import ServiceLandingPage from "demos/ServiceLandingPage.js";
-import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
-
-import EventLandingPageImageSrc from "images/demo/EventLandingPage.jpeg";
-import HotelTravelLandingPageImageSrc from "images/demo/HotelTravelLandingPage.jpeg";
-import AgencyLandingPageImageSrc from "images/demo/AgencyLandingPage.jpeg";
-import SaaSProductLandingPageImageSrc from "images/demo/SaaSProductLandingPage.jpeg";
 import RestaurantLandingPageImageSrc from "images/demo/RestaurantLandingPage.jpeg";
-import ServiceLandingPageImageSrc from "images/demo/ServiceLandingPage.jpeg";
-import HostingCloudLandingPageImageSrc from "images/demo/HostingCloudLandingPage.jpeg";
-
 
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
@@ -93,11 +78,7 @@ import GetStartedCTA from "components/cta/GetStarted.js";
 import GetStartedLightCTA from "components/cta/GetStartedLight.js";
 import DownloadAppCTA from "components/cta/DownloadApp.js";
 
-import SimpleFiveColumnFooter from "components/footers/SimpleFiveColumn.js";
 import FiveColumnWithInputFormFooter from "components/footers/FiveColumnWithInputForm.js";
-import FiveColumnWithBackgroundFooter from "components/footers/FiveColumnWithBackground.js";
-import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
-import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";
 
 
 export const components = {
@@ -106,36 +87,6 @@ export const components = {
       component: RestaurantLandingPage,
       imageSrc: RestaurantLandingPageImageSrc,
       url: "/components/landingPages/RestaurantLandingPage",
-    },
-    HotelTravelLandingPage: {
-      component: HotelTravelLandingPage,
-      imageSrc: HotelTravelLandingPageImageSrc,
-      url: "/components/landingPages/HotelTravelLandingPage",
-    },
-    SaaSProductLandingPage: {
-      component: SaaSProductLandingPage,
-      imageSrc: SaaSProductLandingPageImageSrc,
-      url: "/components/landingPages/SaaSProductLandingPage",
-    },
-    ServiceLandingPage: {
-      component: ServiceLandingPage,
-      imageSrc: ServiceLandingPageImageSrc,
-      url: "/components/landingPages/ServiceLandingPage",
-    },
-    EventLandingPage: {
-      component: EventLandingPage,
-      imageSrc: EventLandingPageImageSrc,
-      url: "/components/landingPages/EventLandingPage",
-    },
-    AgencyLandingPage: {
-      component: AgencyLandingPage,
-      imageSrc: AgencyLandingPageImageSrc,
-      url: "/components/landingPages/AgencyLandingPage",
-    },
-    HostingCloudLandingPage: {
-      component: HostingCloudLandingPage,
-      imageSrc: HostingCloudLandingPageImageSrc,
-      url: "/components/landingPages/HostingCloudLandingPage",
     },
   },
 
@@ -475,31 +426,13 @@ export const components = {
     Footer: {
       type: "Footers Section",
       elements: {
-        SimpleFiveColumn: {
-          name: "Simple Five Column",
-          component: SimpleFiveColumnFooter,
-          url: "/components/blocks/Footer/SimpleFiveColumn",
-        },
         FiveColumnWithInputForm: {
           name: "Five Column With Input Form",
           component: FiveColumnWithInputFormFooter,
           url: "/components/blocks/Footer/FiveColumnWithInputForm",
         },
-        FiveColumnWithBackground: {
-          name: "Five Column With background",
-          component: FiveColumnWithBackgroundFooter,
-          url: "/components/blocks/Footer/FiveColumnWithBackground",
-        },
-        FiveColumnDark: {
-          name: "Five Column Dark",
-          component: FiveColumnDarkFooter,
-          url: "/components/blocks/Footer/FiveColumnDark",
-        },
-        MiniCentered: {
-          name: "Mini Centered Dark",
-          component: MiniCenteredFooter,
-          url: "/components/blocks/Footer/MiniCentered",
-        },
+        
+      
       }
     }
   }
